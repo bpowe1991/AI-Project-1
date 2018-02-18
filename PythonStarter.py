@@ -69,6 +69,7 @@ def depthLimitedSearch(stateVector, depth):
 #Main function for iterative deepening
 def iterativeDeepening(stateVector):
     global path
+    print("Searching...\n")
     for depth in range(999):
         print("Iterative Deep level: ", depth)
         tracedPath = depthLimitedSearch(stateVector, depth)
@@ -89,5 +90,6 @@ def printResult(solution):
         print("State(",index,"):\t",solution[index])
 
 #Main function calls
+print("::Misionaries and Cannibals Solution Calculator::\n")
 solution = iterativeDeepening(stateVector)
 printResult(solution)
