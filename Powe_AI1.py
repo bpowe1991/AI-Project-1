@@ -79,7 +79,6 @@ def iterativeDeepening(stateVector):
             return path
         else:
             #Failed path is cleared
-            print("[!] Failed to Find at Depth",depth,"[!]")
             path = []
 
 #Print out results to terminal
