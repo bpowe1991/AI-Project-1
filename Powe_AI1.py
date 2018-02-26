@@ -71,7 +71,6 @@ def iterativeDeepening(stateVector):
     global path
     print("Searching...\n")
     for depth in range(999):
-        print("Iterative Deep level: ", depth)
         tracedPath = depthLimitedSearch(stateVector, depth)
 
         #Pass successful path from depth first function
